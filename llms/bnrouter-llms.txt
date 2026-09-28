@@ -1,0 +1,113 @@
+# bnrouter
+
+> bnrouter is an AI API gateway that routes, meters, and monetizes access to
+> multiple large-model providers behind a single OpenAI-compatible endpoint.
+
+## Key facts
+
+- **What it is:** A production-grade AI API gateway — one key, one endpoint,
+  unified quotas, and one usage dashboard across many model providers.
+- **Protocol:** OpenAI-compatible chat & embeddings API. Swap models without
+  rewriting client code. Any OpenAI-compatible client (OpenAI SDK, LangChain,
+  and similar) works by pointing its base URL at the gateway.
+- **Supported model families:** Claude, GPT, Gemini, Kimi, DeepSeek, Qwen,
+  Grok, Llama, Flux, DALL·E, Stable Diffusion, and other major chat,
+  embedding, image, and video models, depending on the live upstream channels
+  configured in the model plaza.
+- **Billing:** No setup fee and no monthly commitment. Pay-as-you-go balance
+  top-ups, quota-based subscription plans, and redeem codes — metered per
+  million tokens.
+- **Security:** Requests are forwarded to model providers over encrypted
+  channels; prompts and completions are not stored, only usage metadata.
+- **Languages:** The site and console are available in English, Simplified
+  Chinese (简体中文), 日本語, 한국어, Русский, and Bahasa Melayu.
+- **Deployment:** Static marketing site, merchant console, and admin console
+  served across three subdomains.
+
+## Pages
+
+- [Home (English)](/en/)
+- [Home (简体中文)](/zh/)
+- [Home (日本語)](/ja/)
+- [Home (한국어)](/ko/)
+- [Home (Русский)](/ru/)
+- [Home (Bahasa Melayu)](/ms/)
+- [Quickstart (English)](/en/quickstart/)
+- [Quickstart (简体中文)](/zh/quickstart/)
+- [Quickstart (日本語)](/ja/quickstart/)
+- [Quickstart (한국어)](/ko/quickstart/)
+- [Quickstart (Русский)](/ru/quickstart/)
+- [Quickstart (Bahasa Melayu)](/ms/quickstart/)
+- [Docs (English)](/en/docs/)
+- [Docs (简体中文)](/zh/docs/)
+- [Docs (日本語)](/ja/docs/)
+- [Docs (한국어)](/ko/docs/)
+- [Docs (Русский)](/ru/docs/)
+- [Docs (Bahasa Melayu)](/ms/docs/)
+- [Tooling Docs (English)](/en/docs/tooling/)
+- [Tooling Docs (简体中文)](/zh/docs/tooling/)
+- [Tooling Docs (日本語)](/ja/docs/tooling/)
+- [Tooling Docs (한국어)](/ko/docs/tooling/)
+- [Tooling Docs (Русский)](/ru/docs/tooling/)
+- [Tooling Docs (Bahasa Melayu)](/ms/docs/tooling/)
+- [Agents (English)](/en/agents/)
+- [Agents (简体中文)](/zh/agents/)
+- [Agents (日本語)](/ja/agents/)
+- [Agents (한국어)](/ko/agents/)
+- [Agents (Русский)](/ru/agents/)
+- [Agents (Bahasa Melayu)](/ms/agents/)
+- [Pricing (English)](/en/pricing/)
+- [Pricing (简体中文)](/zh/pricing/)
+- [Pricing (日本語)](/ja/pricing/)
+- [Pricing (한국어)](/ko/pricing/)
+- [Pricing (Русский)](/ru/pricing/)
+- [Pricing (Bahasa Melayu)](/ms/pricing/)
+- [FAQ (English)](/en/faq/)
+- [FAQ (简体中文)](/zh/faq/)
+- [FAQ (日本語)](/ja/faq/)
+- [FAQ (한국어)](/ko/faq/)
+- [FAQ (Русский)](/ru/faq/)
+- [FAQ (Bahasa Melayu)](/ms/faq/)
+- [Sign in](/app/sign-in)
+- [Sign up](/app/sign-up)
+
+## FAQ
+
+**What is bnrouter?**
+bnrouter is an AI API gateway. It aggregates multiple large-model providers
+behind a single OpenAI-compatible endpoint, so your application talks to one
+API instead of many.
+
+**How is it different from calling providers directly?**
+Instead of managing separate accounts, SDKs, and billing for every provider,
+you get one key, one endpoint, unified quotas, and one usage dashboard — while
+models remain interchangeable.
+
+**Is it free to use?**
+The gateway itself has no setup fee and no monthly commitment. You only pay for
+the model usage you consume, either via balance top-ups, quota-based
+subscription plans, or redeem codes.
+
+**Is my data safe?**
+Yes. Requests are forwarded to the model providers over encrypted channels. We
+do not store your prompts or completions; only usage metadata is kept for
+billing and analytics.
+
+**Which models are available?**
+The catalog covers major chat, embedding, image, and video model families
+including Claude, GPT, Gemini, Kimi, DeepSeek, Qwen, Grok, Llama, Flux, DALL·E,
+Stable Diffusion, and more. Availability can vary by upstream channel, so check
+the model plaza in the console for the live list.
+
+**Does it work with OpenAI-compatible clients?**
+Yes. The endpoint implements the OpenAI chat and embeddings protocol, so the
+OpenAI SDK, LangChain, and other OpenAI-compatible clients work by simply
+pointing the base URL at bnrouter and using your key.
+
+**Can I start without a long-term commitment?**
+Yes. There is no setup fee and no minimum spend. Create an account, top up a
+small balance, and pay only for the usage you consume.
+
+**Do you support multiple languages?**
+Yes. The console and this site are available in English, Simplified Chinese,
+Japanese, Korean, Russian, and Bahasa Melayu.

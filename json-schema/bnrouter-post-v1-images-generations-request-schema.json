@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bnrouter/main/json-schema/bnrouter-post-v1-images-generations-request-schema.json",
+  "title": "PostV1ImagesGenerationsRequest",
+  "x-generated": "2026-09-27",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bnrouter-openapi-generated.yml#/components/schemas/PostV1ImagesGenerationsRequest",
+  "type": "object",
+  "properties": {
+    "model": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "n": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}

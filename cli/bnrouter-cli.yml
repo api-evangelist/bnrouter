@@ -1,0 +1,12 @@
+---
+generated: '2026-09-27'
+method: searched
+source: "https://www.bnrouter.com/en/docs/tooling/"
+install:
+  - name: Claude Code
+    description: Set environment variables ANTHROPIC_BASE_URL and ANTHROPIC_API_KEY
+  - name: Codex CLI
+    description: Configure via ~/.codex/config.json with api_base and api_key
+  - name: CC-Switch
+    description: Configure via ~/.config/cc-switch/config.yaml with endpoint url and key
+commands: []

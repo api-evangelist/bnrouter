@@ -1,23 +1,111 @@
 aid: bnrouter
+
 name: bnrouter
-description: 'bnrouter is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bnrouter.com/images/og-1200x630.png
+
+description: bnrouter provides a unified AI API gateway that consolidates multiple large language model providers such as Claude, GPT, Gemini,
+  Kimi, DeepSeek, Qwen, Grok, Llama, and Flux behind a single OpenAI‑compatible endpoint. Users can create API keys, set usage quotas, monitor
+  consumption, and pay per use, simplifying integration of diverse AI models into applications. The platform offers multilingual support, detailed
+  documentation, pricing plans, and a developer console for managing keys and monitoring traffic.
+
 url: https://raw.githubusercontent.com/api-evangelist/bnrouter/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- AI
+- Gateway
+- Multi-Model
+- OpenAI-Compatible
+- DeveloperTools
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/bnrouter-rules.yml
+- type: JSONLD
+  url: json-ld/bnrouter-context.jsonld
+- type: Vocabulary
+  url: vocabulary/bnrouter-vocabulary.yml
+- type: DataModel
+  url: data-model/bnrouter-data-model.yml
+- type: CLI
+  url: cli/bnrouter-cli.yml
+- type: Conformance
+  url: conformance/bnrouter-conformance.yml
+- type: LLMsTxt
+  url: llms/bnrouter-llms.txt
+- type: Hosts
+  url: hosts/bnrouter-hosts.yml
+- type: Vendors
+  url: vendors/bnrouter-vendors.yml
+- type: Login
+  url: https://www.bnrouter.com/app/sign-in
+- type: DomainSecurity
+  url: security/bnrouter-domain-security.yml
 - type: Website
   url: https://www.bnrouter.com/
+- type: Documentation
+  url: https://www.bnrouter.com/en/docs/
+- type: APIReference
+  url: https://www.bnrouter.com/en/docs/api-reference/
+- type: GettingStarted
+  url: https://www.bnrouter.com/en/quickstart/
+- type: Pricing
+  url: https://www.bnrouter.com/en/pricing/
+- type: Support
+  url: https://www.bnrouter.com/en/faq/
+
+apis:
+- name: bnrouter API
+  description: Unified AI API gateway providing OpenAI‑compatible endpoint.
+  humanURL: https://www.bnrouter.com/en/docs/api-reference/
+  baseURL: null
+  aid: bnrouter:bnrouter-api-2
+- aid: bnrouter:bnrouter-api
+  name: bnrouter API
+  description: 'bnrouter API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-09-27); not
+
+    the provider''s own document.'
+  humanURL: https://www.bnrouter.com/en/docs/image-video
+  baseURL: https://YOUR-BASE-URL
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/bnrouter-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/bnrouter-post-v1-chat-completions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bnrouter-post-v1-images-generations-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: API host returns HTML page for /openapi.json instead of a machine‑readable OpenAPI document.
+  evidence:
+  - url: https://api.bnrouter.com/openapi.json
+    status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

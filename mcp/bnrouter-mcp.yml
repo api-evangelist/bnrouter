@@ -1,0 +1,24 @@
+generated: '2026-09-28'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/bnrouter-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on www.bnrouter.com, api.bnrouter.com, console.bnrouter.com; verdict absent.
+  Candidate tools below are derived from the 2 operation(s) in the provider's own OpenAPI (2 listed); they describe what a server WOULD expose,
+  not one that exists.
+tools:
+- name: post_v1_chat_completions
+  operationId: post_v1_chat_completions
+  method: POST
+  path: /v1/chat/completions
+  description: POST /v1/chat/completions
+- name: post_v1_images_generations
+  operationId: post_v1_images_generations
+  method: POST
+  path: /v1/images/generations
+  description: POST /v1/images/generations

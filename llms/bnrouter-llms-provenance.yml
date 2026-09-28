@@ -1,0 +1,6 @@
+generated: '2026-09-27'
+method: probed
+generator: harvest-llms.py
+source: https://www.bnrouter.com/llms.txt
+bytes: 4830
+note: saved verbatim; the provider's own document

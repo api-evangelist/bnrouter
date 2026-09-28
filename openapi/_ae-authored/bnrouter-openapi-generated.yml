@@ -1,0 +1,113 @@
+openapi: 3.1.0
+info:
+  title: bnrouter API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 2 operation(s) read from 9 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; bnrouter has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 0
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.bnrouter.com/en/docs/image-video
+  - https://www.bnrouter.com/en/docs/getting-started
+  - https://www.bnrouter.com/ms/docs/getting-started
+  - https://www.bnrouter.com/ru/docs/getting-started
+  - https://www.bnrouter.com/ja/docs/image-video
+  - https://www.bnrouter.com/ko/docs/image-video
+  - https://www.bnrouter.com/ms/docs/image-video
+  - https://www.bnrouter.com/ru/docs/image-video
+  - https://www.bnrouter.com/zh/docs/image-video
+servers:
+- url: https://YOUR-BASE-URL
+paths:
+  /v1/chat/completions:
+    post:
+      operationId: post_v1_chat_completions
+      tags:
+      - Chat
+      summary: POST /v1/chat/completions
+      x-source: https://www.bnrouter.com/en/docs/getting-started
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1ChatCompletionsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl. curl curl https://YOUR-BASE-URL/v1/chat/completions  -H \"Authorization: Bearer sk-your-api-key\"  -H \"Content-Type:\
+          \ application/json\"  -d '{\n \"model\": \"your-model-id\",\n \"messages\": [{\"role\": \"user\", \"content\": \"Hello!\"}]\n }' bn\
+          \ - router bnrouter is an AI API gateway that routes, meters, and monetizes access to large-model providers through one compatible endpoint.\
+          \ Product Open app Console Pri"
+  /v1/images/generations:
+    post:
+      operationId: post_v1_images_generations
+      tags:
+      - Images
+      summary: POST /v1/images/generations
+      x-source: https://www.bnrouter.com/en/docs/image-video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1ImagesGenerationsRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl curl https://YOUR-BASE-URL/v1/images/generations  -H \"Authorization: Bearer sk-your-api-key\"  -H \"Content-Type: application/json\"\
+          \  -d '{\n \"model\": \"flux-pro\",\n \"prompt\": \"A serene mountain lake at sunrise, photorealistic\",\n \"n\": 1,\n \"size\": \"\
+          1024x1024\"\n }' Image edits Edit an existing image by providing a mask and a new prompt. Send a multipart/form-data request with the\
+          \ image, mask, and prom"
+components:
+  schemas:
+    PostV1ChatCompletionsRequest:
+      type: object
+      properties:
+        model:
+          type: string
+        messages:
+          type: array
+          items:
+            type: object
+            properties:
+              role:
+                type: string
+              content:
+                type: string
+    PostV1ImagesGenerationsRequest:
+      type: object
+      properties:
+        model:
+          type: string
+        prompt:
+          type: string
+        n:
+          type: integer
+        size:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+security:
+- bearer: []
+tags:
+- name: Chat
+- name: Images
