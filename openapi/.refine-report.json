@@ -1,0 +1,19 @@
+{
+  "provider": "bnrouter",
+  "sources": [
+    "_ae-authored/bnrouter-openapi-generated.yml"
+  ],
+  "outputs": [
+    "bnrouter-chat-api-openapi.yml",
+    "bnrouter-images-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bnrouter-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+2 apis, 3 total)"
+  ],
+  "skipped": []
+}

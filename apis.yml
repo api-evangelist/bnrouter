@@ -79,22 +79,34 @@ apis:
   humanURL: https://www.bnrouter.com/en/docs/api-reference/
   baseURL: null
   aid: bnrouter:bnrouter-api-2
-- aid: bnrouter:bnrouter-api
-  name: bnrouter API
-  description: 'bnrouter API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-09-27); not
-
-    the provider''s own document.'
-  humanURL: https://www.bnrouter.com/en/docs/image-video
+- aid: bnrouter:bnrouter-chat-api
+  name: bnrouter Chat API
+  description: The Chat API from bnrouter — 1 operation(s) for chat.
+  humanURL: https://www.bnrouter.com/en/docs/api-reference/
   baseURL: https://YOUR-BASE-URL
+  tags:
+  - Chat
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/bnrouter-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/bnrouter-chat-api-openapi.yml
   - type: JSONSchema
     url: json-schema/bnrouter-post-v1-chat-completions-request-schema.json
   - type: JSONSchema
     url: json-schema/bnrouter-post-v1-images-generations-request-schema.json
-
+- aid: bnrouter:bnrouter-images-api
+  name: bnrouter Images API
+  description: The Images API from bnrouter — 1 operation(s) for images.
+  humanURL: https://www.bnrouter.com/en/docs/api-reference/
+  baseURL: https://YOUR-BASE-URL
+  tags:
+  - Images
+  properties:
+  - type: OpenAPI
+    url: openapi/bnrouter-images-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bnrouter-post-v1-chat-completions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bnrouter-post-v1-images-generations-request-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec
