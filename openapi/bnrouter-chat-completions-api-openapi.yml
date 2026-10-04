@@ -29,13 +29,13 @@ servers:
 security:
 - bearer: []
 tags:
-- name: Chat
+- name: Chat Completions
 paths:
   /v1/chat/completions:
     post:
       operationId: post_v1_chat_completions
       tags:
-      - Chat
+      - Chat Completions
       summary: POST /v1/chat/completions
       x-source: https://www.bnrouter.com/en/docs/getting-started
       requestBody:
