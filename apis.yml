@@ -25,6 +25,12 @@ created: '2026-09-27'
 modified: '2026-09-27'
 
 tags:
+- Artificial Intelligence
+- Gateways
+- Multi-Model
+- OpenAI-Compatible
+- Developer Tools
+tags_raw:
 - AI
 - Gateway
 - Multi-Model
@@ -99,6 +105,8 @@ apis:
   humanURL: https://www.bnrouter.com/en/docs/api-reference/
   baseURL: https://YOUR-BASE-URL
   tags:
+  - Image
+  tags_raw:
   - Images
   properties:
   - type: OpenAPI
