@@ -44,6 +44,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Plans
+  url: plans/bnrouter-plans-pricing.yml
 - type: Spectral
   url: rules/bnrouter-rules.yml
 - type: JSONLD
