@@ -64,5 +64,121 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-bnrouter is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://www.bnrouter.com/
+bnrouter provides a unified AI API gateway that consolidates multiple large language model providers such as Claude, GPT, Gemini, Kimi, DeepSeek, Qwen, Grok, Llama, and Flux behind a single OpenAI‑compatible endpoint. Users can create API keys, set usage quotas, monitor consumption, and pay per use, simplifying integration of diverse AI models into applications. The platform offers multilingual support, detailed documentation, pricing plans, and a developer console for managing keys and monitoring traffic.
+
+**Areas:** Artificial Intelligence · Gateways · Multi-Model · OpenAI-Compatible · Developer Tools
+
+## bnrouter on APIs.io
+
+Everything profiled for bnrouter is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bnrouter/](https://apis.io/providers/bnrouter/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [bnrouter API](https://apis.io/apis/bnrouter/bnrouter-api-2/) — Unified AI API gateway providing OpenAI‑compatible endpoint.
+- [bnrouter Images API](https://apis.io/apis/bnrouter/bnrouter-images-api/) — The Images API from bnrouter — 1 operation(s) for images.
+- [bnrouter Chat Completions API](https://apis.io/apis/bnrouter/bnrouter-chat-completions-api/) — The Chat Completions API from bnrouter — 1 operation(s) for chat completions.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [bnrouter-mcp.yml](https://apis.io/servers/bnrouter/bnrouter-mcp-yml/)
+
+#### JSON Schema (2)
+
+The data models the API reads and writes.
+
+- [PostV1ChatCompletionsRequest](https://apis.io/schemas/bnrouter/bnrouter-post-v1-chat-completions-request/)
+- [PostV1ImagesGenerationsRequest](https://apis.io/schemas/bnrouter/bnrouter-post-v1-images-generations-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Bnrouter Context](https://apis.io/jsonld/bnrouter/bnrouter-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [bnrouter API Rules](https://apis.io/rules/bnrouter/bnrouter-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bnrouter Domain Security](https://apis.io/security/bnrouter/bnrouter-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Bnrouter Plans Pricing](https://apis.io/plans/bnrouter/bnrouter-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.bnrouter.com/)
+- [Documentation](https://www.bnrouter.com/en/docs/)
+- [Getting started](https://www.bnrouter.com/en/quickstart/)
+- [API reference](https://www.bnrouter.com/en/docs/api-reference/)
+- [Pricing](https://www.bnrouter.com/en/pricing/)
+- [Support](https://www.bnrouter.com/en/faq/)
+
+## API Evangelist rating
+
+**Kin Score 26.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 20.6 |
+| Contract governance | 22.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 23.7 |
+
+**Agent readiness 15.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bnrouter/](https://apis.io/providers/bnrouter/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for bnrouter: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bnrouter/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
